@@ -86,7 +86,7 @@ Function Evacuate-RemoteDesktopSessionHost {
                         Invoke-RDUserLogoff -HostServer $Session.HostServer -UnifiedSessionID $Session.UnifiedSessionId -Force
                     }
                     Else {
-                        Write-Verbose "$($Session.UserName) still has active processes. Skipiping"
+                        Write-Verbose "$($Session.UserName) still has active processes. Skipping"
                     }
                 }
             }
